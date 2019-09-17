@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 
+//Decorator, parenthesis reference a function and curly bracets to an JS Object
 @Component({
   selector: 'pm-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template:`
+  <div>
+    <h1> {{pageTitle}}</h1>
+      <div> My First Component </div>
+  </div>
+  `
 })
-export class AppComponent {
-  title = 'Angular: Getting Started';
+
+// class
+export class AppComponent { 
+   pageTitle: string = 'Acme Product Mangement'
 }
